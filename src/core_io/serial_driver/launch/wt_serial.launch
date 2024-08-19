@@ -1,0 +1,5 @@
+<launch>
+      <node pkg="serial_driver" type="serial_driver_node" name="serial_driver_node" output="screen" />
+      <arg name="port" value="8765" />
+      <rosparam file="$(find serial_driver)/config/serial_info.yaml" command="load"/>
+</launch>

@@ -1,0 +1,16 @@
+<launch>
+
+  <arg name="drone_id" default="1" />
+  <arg name="i_am_master" default="false" />
+  <arg name="no_drift_flag" default="" />
+
+
+  <!-- <node pkg="rosmsg_tcp_bridge" name="drone_$(arg drone_id)_bridge_node" type="bridge_node" output="screen" launch-prefix="valgrind" > -->
+  <node pkg="msg_socket_bridge" name="drone_1_bridge_node" type="socket_bridge_node" output="screen" >
+    <param name="is_master" value="false"/>
+  </node>
+    <!-- <node pkg="msg_socket_bridge" name="drone_2_bridge_node" type="socket_bridge_node" output="screen" >
+    <param name="is_master" value="true"/>
+  </node> -->
+
+</launch>

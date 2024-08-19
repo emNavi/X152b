@@ -1,0 +1,16 @@
+usb_cam_driver:
+  cam_device_id: 2
+  camera_topic: usb_img
+  frame_id: usb_cam_link
+  image_width: 1280
+  image_height: 720
+  fps: 90
+  debug: true
+  using_video: false
+  using_bag: false
+  video_path: "/record/video/test_sun_4.avi"
+  save_video: false
+  save_path: "/record/video/"
+  use_port: false
+  show_img: false
+  camera_param_path: "/config/camera_info.yaml"

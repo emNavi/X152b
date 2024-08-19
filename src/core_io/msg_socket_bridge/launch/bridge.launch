@@ -1,0 +1,16 @@
+<launch>
+
+  <!-- <arg name="drone_id" default="1" /> -->
+  <arg name="i_am_master" default="false" />  
+  <arg name="drone_id" default="2" />
+
+  <!-- <arg name="no_drift_flag" default="" /> -->
+
+  <node pkg="msg_socket_bridge" name="drone_bridge_node" type="socket_bridge_node" output="screen" >
+    <remap from="~my_odom" to = "/quadrotor_control/odom"/>
+    <param name="drone_id" value="$(arg drone_id)"/>
+
+    <param name="is_master" value="false"/>
+  </node>
+
+</launch>
