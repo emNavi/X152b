@@ -24,6 +24,6 @@
 
 ##
 
-该项目开发了无人机科研平台 **X152b**、 **X660** 等，精简并集成了多种基于无人机平台的前沿研究算法。本仓库是 emNavi 项目基于 **X152b** 型无人机的二次开发平台，以及几种典型智能算法的一键部署。 - [使用可参考文档 https://x152b.readthedocs.io](https://x152b.readthedocs.io/en/latest/introduction/index.html).
+该项目开发了无人机科研平台 **X152b**、 **X660** 等，精简并集成了多种基于无人机平台的前沿研究算法。本仓库是 emNavi 项目基于 **X152b** 型无人机的二次开发平台，以及几种典型智能算法的一键部署。 - [使用文档 https://x152b.readthedocs.io](https://x152b.readthedocs.io/en/latest/introduction/index.html).
 
 <!-- TODO(Derkai): 需要一个开源许可证 -->
