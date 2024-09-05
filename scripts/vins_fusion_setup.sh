@@ -11,7 +11,7 @@ if [ ! -d PROJECT_DIR/"3rdparty" ]; then
 fi
 TRDPARTY_DIR="${PROJECT_DIR}/3rdparty"
 
-sudo apt-get install python3-catkin-tools
+sudo apt-get -y install python3-catkin-tools
 
 # mavros
 sudo apt -y install ros-noetic-mavros

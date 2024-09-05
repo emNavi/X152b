@@ -11,7 +11,7 @@ if [ ! -d PROJECT_DIR/"3rdparty" ]; then
 fi
 TRDPARTY_DIR="${PROJECT_DIR}/3rdparty"
 
-sudo apt-get install python3-catkin-tools
+sudo apt-get -y install python3-catkin-tools
 
 # mavros
 sudo apt -y install ros-noetic-mavros
@@ -30,7 +30,7 @@ if [ ! -d "${TRDPARTY_DIR}/eigen-3.4.0" ]; then
     mkdir build
     cd build
     cmake -DBUILD_SHARED_LIBS=TRUE ..
-    make
+    make -j8
     sudo make install
     sudo ln -s /usr/include/eigen3/Eigen /usr/include/Eigen
     popd
@@ -50,7 +50,7 @@ if [ ! -d "${TRDPARTY_DIR}/ceres-solver-2.1.0" ]; then
     mkdir build
     cd build
     cmake -DBUILD_SHARED_LIBS=TRUE ..
-    make
+    make -j8
     sudo make install
     popd
     rm ceres-solver.zip

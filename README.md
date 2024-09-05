@@ -17,7 +17,7 @@
   
 </p>
 <p align="center">
-    <a href="https://x152b.readthedocs.io/en/latest/introduction/index.html"><img src="./docs/X152b-main.png" alt="example" width=80%></a> -->
+    <a href="https://x152b.readthedocs.io/en/latest/introduction/index.html"><img src="./docs/X152b-main.png" alt="x152b-example" width=80%></a> -->
     <br>
     <em>Embodied Navigation(emNavi)是一项基于感知的无人机具身智能导航与控制的研究项目。旨在将最前沿的人工智能与优化方法部署于嵌入式层级的移动机器人之上</em>
 </p>
