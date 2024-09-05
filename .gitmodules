@@ -1,0 +1,3 @@
+[submodule "src/tasks/local_map"]
+	path = src/tasks/local_map
+	url = https://github.com/emNavi/local_map.git
