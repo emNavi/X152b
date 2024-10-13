@@ -4,7 +4,7 @@ import yaml
 import getpass
 import os
 
-param_file="{}/../src/core/global_interface/config".format(os.path.dirname(os.path.abspath(__file__)))
+param_file="{}/../src/autonomous_drone_sdk/global_interface/config".format(os.path.dirname(os.path.abspath(__file__)))
 with open(param_file+"/drone_param.yaml", "r") as stream:
     try:
         dictionary = yaml.safe_load(stream)

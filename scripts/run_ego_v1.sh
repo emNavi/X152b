@@ -17,7 +17,7 @@ fx=$(python3 ./scripts/find_config.py fx)
 fy=$(python3 ./scripts/find_config.py fy)
 if [ $? -eq 0 ] 
 then
-    gnome-terminal -- bash -c "source devel/setup.bash;roslaunch ego_planner Swarm_all_in_one.launch \
+    gnome-terminal -- bash -c "source devel/setup.bash;roslaunch ego_planner swarm_all_in_one.launch \
     drone_id:=$drone_id cx:=$cx cy:=$cy fx:=$fx fy:=$fy flight_type:=$flight_type max_vel:=$max_vel max_acc:=$max_acc" && sleep 1;
 else
     echo error
