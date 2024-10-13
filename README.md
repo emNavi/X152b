@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">⚡️<ins>EnNavi</ins> ⚡️<br>Embodied Navigation </h1>
+  <h1 align="center">⚡️<ins>EmNavi</ins> ⚡️<br>Embodied Navigation </h1>
   <p align="center">
   <!-- TODO(Derkai): 这里可以补齐主要贡献人员链接 -->
     <!-- <a href="https://贡献成员链接/">XXX XXX</a> -->

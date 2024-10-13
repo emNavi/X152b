@@ -1,6 +1,0 @@
-<launch>
-    <node pkg="camera_driver" type="usb_cam_driver_node" name="usb_cam_driver_node" output="screen" />
-    <rosparam file="$(find camera_driver)/config/camera_info.yaml" command="load"/>
-    <!-- 在rviz中显示-->
-    <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find camera_driver)/config/camera_driver.rviz" required="true" /> -->
-</launch>

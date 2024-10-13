@@ -1,0 +1,29 @@
+<launch>
+    <arg name="drone_id" default="0"/>
+    <arg name="drone_type" default="ACM0"/>
+
+    <!-- 1. Start mavros -->
+	<include file="$(find mavros)/launch/px4.launch">
+        <arg name="fcu_url" value="/dev/tty$(arg drone_type):921600"/>
+        <arg name="gcs_url" value="udp://:14556@10.42.0.173:14550"/>
+    </include>
+
+    <!-- 2. Start realsense camera driver -->
+	<include file="$(find realsense2_camera)/launch/rs_d430_camera.launch"></include>
+
+    <!-- 3. Start quadrotor swarm system -->
+	<include file="$(find drone_detect)/launch/drone_detect_for_swarm.launch">
+            <arg name="drone_id" value="$(arg drone_id)"/>
+    </include>
+
+    <!-- 4. Start flight control driver -->
+	<include file="$(find single_offb_pkg)/launch/swarm_single.launch">
+            <arg name="drone_id" value="$(arg drone_id)"/>
+    </include>
+
+    <!-- 5. Start visualization moduler -->
+	<include file="$(find foxglove_bridge)/launch/foxglove_bridge.launch">
+            <arg name="port" value="8765"/>
+    </include>
+
+</launch> 

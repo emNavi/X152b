@@ -2,5 +2,4 @@
 .vscode
 devel/
 build/
-src/tasks/
 *.zip

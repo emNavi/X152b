@@ -1,3 +1,12 @@
-[submodule "src/tasks/local_map"]
-	path = src/tasks/local_map
+[submodule "src/local_map"]
+	path = src/local_map
 	url = https://github.com/emNavi/local_map.git
+[submodule "src/vins_fusion"]
+	path = src/vins_fusion
+	url = https://github.com/emNavi/vins_fusion.git
+[submodule "src/ego_planner_swarm_v1"]
+	path = src/ego_planner_swarm_v1
+	url = https://github.com/emNavi/ego-planner-swarm-v1.git
+[submodule "src/kalibr"]
+	path = src/kalibr
+	url = https://github.com/emNavi/kalibr.git
