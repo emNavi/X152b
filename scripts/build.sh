@@ -2,6 +2,9 @@
 # set -x
 # set -e
 
+# 获取项目根路径
+PROJECT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../" && pwd )"
+
 # 创建第三方库存放目录 3rdparty
 if [ ! -d PROJECT_DIR/"3rdparty" ]; then
     mkdir -p ${PROJECT_DIR}"/3rdparty"
@@ -17,13 +20,16 @@ sudo apt -y install ros-noetic-mavros
 echo "Installing PCL library..."
 sudo apt -y install libpcl-dev
 
-# eigen>= 3.3.4
+# v4l2
+sudo apt -y install libv4l-dev
+
+# eigen == 3.3.7
 echo "Check eigen library..."
-if [ ! -d "${TRDPARTY_DIR}/eigen-3.4.0" ]; then
+if [ ! -d "${TRDPARTY_DIR}/eigen-3.3.7" ]; then
     echo "Downloading eigen..."
-    wget -O eigen3.zip https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.zip
+    wget -O eigen3.zip https://gitlab.com/libeigen/eigen/-/archive/3.3.7/eigen-3.3.7.zip
     unzip -q eigen3.zip -d "${TRDPARTY_DIR}"
-    pushd "${TRDPARTY_DIR}/eigen-3.4.0"
+    pushd "${TRDPARTY_DIR}/eigen-3.3.7"
     mkdir build
     cd build
     cmake -DBUILD_SHARED_LIBS=TRUE ..

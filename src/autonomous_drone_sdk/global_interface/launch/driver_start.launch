@@ -9,19 +9,14 @@
     </include>
 
     <!-- 2. Start realsense camera driver -->
-	<include file="$(find realsense2_camera)/launch/rs_d430_camera.launch"></include>
+	<include file="$(find realsense2_camera)/launch/rs_camera_d430.launch"></include>
 
-    <!-- 3. Start quadrotor swarm system -->
-	<include file="$(find drone_detect)/launch/drone_detect_for_swarm.launch">
-            <arg name="drone_id" value="$(arg drone_id)"/>
-    </include>
-
-    <!-- 4. Start flight control driver -->
+    <!-- 3. Start flight control driver -->
 	<include file="$(find single_offb_pkg)/launch/swarm_single.launch">
             <arg name="drone_id" value="$(arg drone_id)"/>
     </include>
 
-    <!-- 5. Start visualization moduler -->
+    <!-- 4. Start visualization moduler -->
 	<include file="$(find foxglove_bridge)/launch/foxglove_bridge.launch">
             <arg name="port" value="8765"/>
     </include>
