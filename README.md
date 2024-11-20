@@ -17,13 +17,13 @@
   
 </p>
 <p align="center">
-    <a href="https://x152b.readthedocs.io/en/latest/introduction/index.html"><img src="./docs/X152b-main.png" alt="x152b-example" width=80%></a> -->
+    <a href="https://emnavi.tech/"><img src="./docs/X152b-main.png" alt="x152b-example" width=80%></a> -->
     <br>
     <em>Embodied Navigation(emNavi)是一项基于感知的无人机具身智能导航与控制的研究项目。旨在将最前沿的人工智能与优化方法部署于嵌入式层级的移动机器人之上</em>
 </p>
 
 ##
 
-该项目开发了无人机科研平台 **X152b**、 **X660** 等，精简并集成了多种基于无人机平台的前沿研究算法。本仓库是 emNavi 项目基于 **X152b** 型无人机的二次开发平台，以及几种典型智能算法的一键部署。 - [使用文档 https://x152b.readthedocs.io](https://emnavi.tech/).
+该项目开发了无人机科研平台 **X152b**、 **X660** 等，精简并集成了多种基于无人机平台的前沿研究算法。本仓库是 emNavi 项目基于 **X152b** 型无人机的二次开发平台，以及几种典型智能算法的一键部署。 - [使用文档 https://emnavi.tech/](https://emnavi.tech/).
 
 <!-- TODO(Derkai): 需要一个开源许可证 -->
