@@ -1,20 +1,20 @@
 [submodule "src/local_map"]
 	path = src/local_map
-	url = https://gitee.com/Derkai52/local_map.git
+	url = https://gitee.com/emnavi/local_map.git
 	# url = https://github.com/emNavi/local_map.git
 [submodule "src/vins_fusion"]
 	path = src/vins_fusion
-	url = https://gitee.com/Derkai52/vins_fusion.git
+	url = https://gitee.com/emnavi/vins_fusion.git
 	# url = https://github.com/emNavi/vins_fusion.git
 [submodule "src/ego_planner_swarm_v1"]
 	path = src/ego_planner_swarm_v1
-	url = https://gitee.com/Derkai52/ego-planner-swarm-v1.git
+	url = https://gitee.com/emnavi/ego-planner-swarm-v1.git
 	# url = https://github.com/emNavi/ego-planner-swarm-v1.git
 [submodule "src/kalibr"]
 	path = src/kalibr
-	url = https://gitee.com/Derkai52/kalibr.git
+	url = https://gitee.com/emnavi/kalibr.git
 	# url = https://github.com/emNavi/kalibr.git
 [submodule "src/open_vins"]
 	path = src/open_vins
-	url = https://gitee.com/Derkai52/open-vins.git
+	url = https://gitee.com/emnavi/open-vins.git
 	# url = https://github.com/emNavi/open-vins.git
