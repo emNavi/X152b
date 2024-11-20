@@ -9,7 +9,7 @@
     </include>
 
     <!-- 2. Start realsense camera driver -->
-	<include file="$(find realsense2_camera)/launch/rs_camera_d430.launch"></include>
+	<include file="$(find realsense2_camera)/launch/rs_d430_camera.launch"></include>
 
     <!-- 3. Start Mapping -->
 	<include file="$(find drone_detect)/launch/drone_detect_for_swarm.launch">
