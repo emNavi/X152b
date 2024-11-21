@@ -14,5 +14,5 @@ else
     echo "[error]Not found drone_id,please_check params_file"
     exit 
 fi
-echo "if you want to close this script, you need use : ./S_kill_one_shot.sh"
+echo "if you want to close this script, you need use : bash ./scripts/kill_one_shot.sh"
 echo "if you want to connect foxglove, you need use this address : ws://<drone_ip>:8765"
