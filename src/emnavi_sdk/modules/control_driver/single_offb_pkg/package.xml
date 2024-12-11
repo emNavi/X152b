@@ -67,12 +67,8 @@
   <exec_depend>map_operation_pkg</exec_depend>
   <build_depend>path_searching_pkg</build_depend>
   <exec_depend>path_searching_pkg</exec_depend>
-  <build_depend>vechicle_controller</build_depend>
-  <exec_depend>vechicle_controller</exec_depend>
   <build_depend>poly_curves_pkg</build_depend>
   <exec_depend>poly_curves_pkg</exec_depend>
-  <build_depend>regular_motion</build_depend>
-  <exec_depend>regular_motion</exec_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>

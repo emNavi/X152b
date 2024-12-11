@@ -18,9 +18,8 @@
 
 #include <std_msgs/Float32MultiArray.h>
 
-#include "vechicle_controller/qr_controller.h"
-#include "single_offb_pkg/FSM.hpp"
-#include "single_offb_pkg/regular_motion.hpp"
+#include "qr_controller.h"
+#include "FSM.hpp"
 
 #define ROS_RATE 50.0
 #define TAKEOFF_HEIGHT 1.2
