@@ -14,7 +14,7 @@ include_directories(
   include
   ${catkin_INCLUDE_DIRS}
 )
-add_executable(uav_ctrl src/uav_ctrl.cpp)
+add_executable(uav_ctrl src/uav_ctrl.cpp src/qr_controller.cpp)
 target_link_libraries(uav_ctrl
   ${catkin_LIBRARIES}
 )
