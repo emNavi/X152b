@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">⚡️<ins>EmNavi X152b</ins> ⚡️<br>Embodied Navigation (V1.1.0) </h1>
+  <h1 align="center">⚡️<ins>EmNavi X152b</ins> ⚡️<br>Embodied Navigation (V1.2.0) </h1>
   <p align="center">
   </p>
   <h2 align="center">
