@@ -1,0 +1,79 @@
+%YAML:1.0
+---
+#common parameters
+#support: 1 imu 1 cam; 1 imu 2 cam: 2 cam; 
+imu: 1
+num_of_cam: 2
+
+imu_topic: "/mavros/imu/data_raw"
+image0_topic: "/camera/infra1/image_rect_raw"
+image1_topic: "/camera/infra2/image_rect_raw"
+
+output_path: "/home/emnavi/X152b/src/global_interface/config/vins_fusion/output"
+
+cam0_calib: "left.yaml"
+cam1_calib: "right.yaml"
+image_width: 640
+image_height: 480
+
+# swarm offset option
+x_swarm_offset: 0.0
+y_swarm_offset: 0.0
+
+# Extrinsic parameter between IMU and Camera.
+estimate_extrinsic: 0  # 0  Have an accurate extrinsic parameters. We will trust the following imu^R_cam, imu^T_cam, don't change it.
+                        # 1  Have an initial guess about extrinsic parameters. We will optimize around your initial guess.
+
+body_T_cam0: !!opencv-matrix
+    rows: 4
+    cols: 4
+    dt: d
+    data: [ 1.4897300247027401e-02, 6.8382451385092403e-03,
+        9.9986564539880851e-01, 3.7814378304555980e-02,
+        -9.9975598552226963e-01, -1.6210287889806940e-02,
+        1.5006531208960380e-02, 2.0312835542282776e-02,
+        1.6310728302127622e-02, -9.9984522050663205e-01,
+        6.5950869819076940e-03, 4.1078143027820951e-02, 0., 0., 0., 1. ]
+body_T_cam1: !!opencv-matrix
+    rows: 4
+    cols: 4
+    dt: d
+    data: [ 1.5296198313843545e-02, 7.2227259990577108e-03,
+        9.9985691903706198e-01, 3.1045114983150834e-02,
+        -9.9975042979025397e-01, -1.6173030216072526e-02,
+        1.5411399282096590e-02, -2.9009021264514490e-02,
+        1.6282028477612315e-02, -9.9984312035577472e-01,
+        6.9735375442945280e-03, 4.2842875811853372e-02, 0., 0., 0., 1. ]
+
+#Multiple thread support
+multiple_thread: 1
+
+#feature traker paprameters
+max_cnt: 150            # max feature number in feature tracking
+min_dist: 30            # min distance between two features 
+freq: 10                # frequence (Hz) of publish tracking result. At least 10Hz for good estimation. If set 0, the frequence will be same as raw image 
+F_threshold: 1.0        # ransac threshold (pixel)
+show_track: 1           # publish tracking image as topic
+flow_back: 1            # perform forward and backward optical flow to improve feature tracking accuracy
+
+#optimization parameters
+max_solver_time: 0.04  # max solver itration time (ms), to guarantee real time
+max_num_iterations: 8   # max solver itrations, to guarantee real time
+keyframe_parallax: 10.0 # keyframe selection threshold (pixel)
+
+#imu parameters       The more accurate parameters you provide, the better performance
+acc_n: 0.1          # accelerometer measurement noise standard deviation. #0.2   0.04
+gyr_n: 0.01         # gyroscope measurement noise standard deviation.     #0.05  0.004
+acc_w: 0.001         # accelerometer bias random work noise standard deviation.  #0.002
+gyr_w: 0.0001       # gyroscope bias random work noise standard deviation.     #4.0e-5
+g_norm: 9.805         # gravity magnitude
+
+#unsynchronization parameters
+estimate_td: 1                      # online estimate time offset between camera and imu
+td: -0.01               # initial value of time offset. unit: s. readed image clock + td = real image clock (IMU clock)
+
+#loop closure parameters
+load_previous_pose_graph: 0        # load and reuse previous pose graph; load from 'pose_graph_save_path'
+pose_graph_save_path: "/home/emnavi/X152b/src/emnavi_sdk/global_interface/config/vins_fusion/output/save_files/pose_graph" # save and load path
+save_image: 0                   # save image in pose graph for visualization prupose; you can close this function by setting 0 
+

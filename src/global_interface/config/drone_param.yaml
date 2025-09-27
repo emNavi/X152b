@@ -1,0 +1,23 @@
+# 飞机型号
+drone_type: X152b
+# 飞机编号
+drone_id: 1
+
+# 起飞高度 m
+takeoff_height: 0.5
+racer_x: 0.0
+racer_y: 0.0
+racer_z: 0.0
+
+# 这里填写的是 QGC 地面站软件所在的主机的IP地址，需要能访问到无人机网络
+gcs_udp_ip: 10.42.0.191
+
+# 自主规划时飞行速度 m/s、加速度 m/s²
+fx: 385.5018310546875
+fy: 385.5018310546875
+cx: 324.2211608886719
+cy: 240.7614288330078
+max_vel: 0.5
+max_acc: 0.5
+ego_swarm_flage: false # 不使用集群飞行就设置为 false
+flight_type: 2 # 1: 使用 2D Nav Goal 手动选择导航点  2: 使用预设全局导航点

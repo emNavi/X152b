@@ -1,0 +1,43 @@
+fsm/waypoint_num: 2
+# 预设目标点为相对里程计初始化点的x、y、z坐标，单位 m 
+
+# 预设目标点，按顺序执行飞行
+fsm/waypoint0_x:  2.0
+fsm/waypoint0_y:  0.0
+fsm/waypoint0_z:  0.5
+
+fsm/waypoint1_x:  0.0
+fsm/waypoint1_y:  0.0
+fsm/waypoint1_z:  0.5
+
+fsm/waypoint2_x:  0.0
+fsm/waypoint2_y:  0.0
+fsm/waypoint2_z:  1.0
+
+fsm/waypoint3_x:  0.0
+fsm/waypoint3_y:  0.0
+fsm/waypoint3_z:  1.0
+
+fsm/waypoint4_x:  0.0
+fsm/waypoint4_y:  0.0
+fsm/waypoint4_z:  1.0
+
+fsm/waypoint5_x:  0.0
+fsm/waypoint5_y:  0.0
+fsm/waypoint5_z:  1.0
+
+fsm/waypoint6_x:  0.0
+fsm/waypoint6_y:  0.0
+fsm/waypoint6_z:  1.0
+
+fsm/waypoint7_x:  0.0
+fsm/waypoint7_y:  0.0
+fsm/waypoint7_z:  1.0
+
+fsm/waypoint8_x:  0.0
+fsm/waypoint8_y:  0.0
+fsm/waypoint8_z:  1.0
+
+fsm/waypoint9_x:  0.0
+fsm/waypoint9_y:  0.0
+fsm/waypoint9_z:  1.0
