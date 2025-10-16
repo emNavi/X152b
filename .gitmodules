@@ -17,3 +17,4 @@
 [submodule "src/emnavi_sdk/emnv_ctl_bridge"]
 	path = src/emnavi_sdk/emnv_ctl_bridge
 	url = https://github.com/emNavi/emnv_ctl_bridge.git
+	branch = devh
