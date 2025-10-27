@@ -4,9 +4,6 @@
 [submodule "src/vins_fusion"]
 	path = src/vins_fusion
 	url = https://github.com/emNavi/vins_fusion.git
-[submodule "src/open_vins"]
-	path = src/open_vins
-	url = https://github.com/emNavi/open-vins.git
 [submodule "src/ego_planner"]
 	path = src/ego_planner
 	url = https://github.com/emNavi/ego_planner.git
